@@ -12,8 +12,7 @@
        {
       var p1 = document.getElementById("password").value;
       var p2 = document.getElementById("comfirm-password").value;
-      var e1 = document.getElementById("usuario").value;
-      var e2 = document.getElementById("comfirm-email").value;
+      
       if (p1 != p2) {
         alert("las contraseñas no coinciden");
       return false;
@@ -21,14 +20,6 @@
        return true; 
       }
       }
-      
-      if (e1 != e2) {
-        alert("Los Emails no Coinciden");
-      return false;
-      } else {
-       return true; 
-      }
-      
       </script>
 </head>
 <body>

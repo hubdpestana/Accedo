@@ -1,7 +1,13 @@
 body{
+    min-height: 100%;
     background-color: rgb(12, 12, 12);
     overflow: hidden;
 }
+
+html{
+    min-height: 100%;
+}
+
 .logo{
  display: block;
  margin: auto;

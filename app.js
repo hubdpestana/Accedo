@@ -9,21 +9,22 @@ function updatePokemons(url) {
             for (let i of res.results) {
             fetch(i.url)
             .then(x => x.json())
-            .then(x => {
-              pokemonsList.innerHTML += `<div class="card">
+             .then(x => {
+              pokemonsList.innerHTML += `<a href="infopokemon.php"> <div class="card">
               <img src="${x.sprites.front_default}" alt="">
-              <p>${x.name}</p> 
-              </div>`;
+              <p>${x.id}</p> 
+              <p>${x.name}</p>
+              </div>  </a>`;
             });
         };
-        links.innerHTML = (res.previous) ? `<button onclick="updatePokemons('${res.previous}')">Atrás</button>` : "";
-        links.innerHTML += (res.next) ? `<button onclick="updatePokemons('${res.next}')">Siguiente</button>` : "";
+
+        links.innerHTML = (res.previous) ? `<button type="button" class="m-3 btn btn-primary btn-block" onclick="updatePokemons('${res.previous}')">Regresar</button>` : "";
+        links.innerHTML += (res.next) ? `<button type="button" class="m-3 btn btn-primary btn-block" onclick="updatePokemons('${res.next}')">Siguiente</button>` : "";
       });
   }
 
 }
 updatePokemons("https://pokeapi.co/api/v2/pokemon");
-
 
 function validar() {
   var response = grecaptcha.getResponse();

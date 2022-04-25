@@ -1,13 +1,10 @@
 <?php
-
 session_start();
 $usuario = $_SESSION['usuario'];
 if (isset($_SESSION['usuario'])) {
-
     ?>
     <!DOCTYPE html>
     <html lang="es">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,48 +48,19 @@ if (isset($_SESSION['usuario'])) {
                                 class="fa fa-sign-out-alt "></i></a>
                 </div>
             </div>
-        
-       
-        
-        
         </nav>
-        
-        
-    
-    
-    </div>
-
-    
-
         </div>
-     
-        <!-- <div class="contenedor" id="contenedor"></div> -->
-        <div class="container-card" id="pokemons-list">
-    <!-- Donde se van a ir pintando o ingresando los pokemones que nos traigamos de la API -->
+        </div>
+        <div class="container-card" id="pokemons-list"> </div>
+    <div id="links" class="link">
   </div>
-
-  <div id="links" class="link">
-    <!-- Donde pintaremos o ingresaremos los enlaces de siguiente o atras de la paginacion -->
-  </div>
-
+  <div>
+    </div>
   <script src="app.js"></script>
-
-        
-
-
-<script src="app.js"></script>
-
-
-
-
-     </body>
-        </html>
-
-
-    <?php
+ </body>
+</html>
+<?php
 } else {
     header('Location: index.php');
 }
-
-
 ?>

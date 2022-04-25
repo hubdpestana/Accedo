@@ -53,8 +53,11 @@
           
           <div class="input-group mb-3">
             <input type="password" name="password" id="password" class="form-control" placeholder="password" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
-           
+                 
           </div> 
+          
+                            
+
           <center>
           <div class="g-recaptcha" name="grecaptcha" id="grecapcha"
                          data-sitekey="6Ld-EqAeAAAAAOFwDsSr-ddOncoiBUqbLT2GPYLg" data-callback="callback">>
@@ -63,7 +66,7 @@
                 <br>
            <input type="submit" class="text-white btn bg-success" OnClick="return validar();" value="Ingresar">
 
-           <a href="registro.php" class="alert-link">Regístrese</a>
+           <a href="registro.php" class="alert-link">Regístrese aquí</a>
     </form>
 </div>
 </body>
